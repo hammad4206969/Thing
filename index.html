@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Superme Lamp</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon lamp"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Supreme Lamp</h1>
+								<p>We PROVIDE, making it easy for computer access</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#Home">Home</a></li>
+								<li><a href="#Tampa">Tampa</a></li>
+								<li><a href="#Orlando">Orlando</a></li>
+								<li><a href="#Miami">Miami</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Home -->
+							<article id="Home">
+								<h2 class="major">Intro</h2>
+								<span class="image main"><img src="images/pic01.jpeg" alt="" /></span>
+								<p>In the bay area, not everyone has access to electronics. Through collecting then distributing these resources, it provides a fair learning environment for everyone.</p>
+							</article>
+
+						<!-- Tampa -->
+							<article id="Tampa">
+								<h2 class="major">Listings - Tampa</h2>
+								<span class="image main"><img src="images/tng7p94h3xfy.jpg" alt="" /></span>
+								{% for i in posts %}
+<p><a href="/post/{{i.id}}"> {{i.title}}</a></p>
+{% endfor %}
+{% endblock %}
+							</article>
+
+						<!-- Orlando -->
+							<article id="Orlando">
+								<h2 class="major">Listings - Orlando</h2>
+								<span class="image main"><img src="images/3924261183c62edf3966764c7bacffff.png" alt="" /></span>
+								{% for i in posts %}
+<p><a href="/post/{{i.id}}"> {{i.title}}</a></p>
+{% endfor %}
+{% endblock %}
+							</article>
+
+						<!-- Miami -->
+							<article id="Miami">
+								<h2 class="major">Listing - Miami</h2>
+								<span class="image main"><img src="images/baner-10b7.jpg" alt="" /></span>
+								{% for i in posts %}
+<p><a href="/post/{{i.id}}"> {{i.title}}</a></p>
+{% endfor %}
+{% endblock %}
+							</article>
+
+						
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p>Thanks.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
